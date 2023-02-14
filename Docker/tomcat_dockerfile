@@ -9,3 +9,16 @@ EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
 
 
+
+
+
+
+
+
+
+
+
+FROM tomcat:latest
+RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+
+
